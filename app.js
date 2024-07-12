@@ -1,9 +1,12 @@
 // Задание 1
-// const nav = window.navigator;
-// console.log(nav);
+const nav = window.navigator;
+console.log(nav);
 
-// const loc = window.location;
-// console.log(loc);
+const loc = window.location;
+console.log(loc);
+console.log(
+  `На компьютере с ОС ${nav.platform} с помощью браузера ${nav.userAgent} я открыл страничку ${loc.pathname}`
+);
 
 // console.log("На компьютере с ОС ... с помощью браузера ... я открыл страничку ... ");
 
