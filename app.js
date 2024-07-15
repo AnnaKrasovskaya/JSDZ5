@@ -1,12 +1,12 @@
 // Задание 1
-const nav = window.navigator;
-console.log(nav);
+// const nav = window.navigator;
+// console.log(nav);
 
-const loc = window.location;
-console.log(loc);
-console.log(
-  `На компьютере с ОС ${nav.platform} с помощью браузера ${nav.userAgent} я открыл страничку ${loc.pathname}`
-);
+// const loc = window.location;
+// console.log(loc);
+// console.log(
+//   `На компьютере с ОС ${nav.platform} с помощью браузера ${nav.userAgent} я открыл страничку ${loc.pathname}`
+// );
 
 // console.log("На компьютере с ОС ... с помощью браузера ... я открыл страничку ... ");
 
@@ -75,23 +75,56 @@ console.log(
 
 // Задание 8
 
-let linksArr = [
-  "https://www.amazon.com/",
-  "https://www.youtube.com/",
-  "https://devby.io/",
-  "https://www.google.com/",
-  "https://apple.com/",
-];
+// let linksArr = [
+//   "https://www.amazon.com/",
+//   "https://www.youtube.com/",
+//   "https://devby.io/",
+//   "https://www.google.com/",
+//   "https://apple.com/",
+// ];
 
-const section = document.createElement("div");
-section.style.background = "grey";
-section.style.padding = "20px";
+// const section = document.createElement("div");
+// section.style.background = "grey";
+// section.style.padding = "20px";
 
-linksArr.forEach((element) => {
-  const link = document.createElement("a");
-  link.href = element;
-  section.append(link);
-  link.style.display = "block";
-  link.innerText = element;
+// linksArr.forEach((element) => {
+//   const link = document.createElement("a");
+//   link.href = element;
+//   section.append(link);
+//   link.style.display = "block";
+//   link.innerText = element;
+// });
+// document.body.append(section);
+
+// Задание 9
+
+// const users = [
+//   { name: "Mark", age: 12 },
+//   { name: "Olga", age: 30 },
+//   { name: "Tom", age: 25 },
+//   { name: "Den", age: 43 },
+// ];
+// const tab = document.querySelector("table");
+// users.forEach((element) => {
+//   const tr = document.createElement("tr");
+//   const td1 = document.createElement("td");
+//   const td2 = document.createElement("td");
+
+//   td1.innerText = element.name;
+//   td2.innerText = element.age;
+//   tr.append(td1);
+//   tr.append(td2);
+//   tab.append(tr);
+// });
+
+// Задание 10
+const tag = document.querySelectorAll("ul");
+tag.forEach((ul) => {
+  ul.classList.add("list");
+  const elements = ul.querySelectorAll("li");
+  for (let i = 1; 1 <= elements.length; i += 2) {
+    elements[i].classList.add("item");
+  }
 });
-document.body.append(section);
+const link = document.querySelectorAll("a");
+link.forEach((el) => el.classList.add("custom-link"));
